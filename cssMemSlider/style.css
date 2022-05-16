@@ -43,7 +43,7 @@ body {
     flex-direction: column;
     gap: 2%;
     width: 100%;
-    height: 95%;
+    height: 100%;
     padding: 2% 17.5%;
     background-image: url('./assets/img/back2.png');
     background-size: 100% 100%;
@@ -53,7 +53,7 @@ body {
 
 .screen {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-size: 100% 100%;
     border-radius: 20px;
     filter: sepia();
@@ -98,7 +98,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 5%;
+    height: 10%;
     overflow: hidden;
 }
 
@@ -128,27 +128,52 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    width: 30%;
     height: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 25%;
 }
 
 .dot {
     width: 15px;
     height: 15px;
-    background-color: #FFCC33;
-    border-radius: 100%;
+    background-color: #000000;
+    border: 2px solid #FFCC33;
+    border-radius: 25%;
+    box-sizing: border-box;
 }
 
 .radio {
     display: none;
 }
 
-.one:checked {
-    background-color: blue;
+.btn:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+#one:checked ~ .controls .btn-one .dot {
+    background-color: #FFCC33;
+    transform: scale(0.9);
 }
 
 #one:checked ~ .screen .pictures {
     transform: translateY(0);
+}
+
+#two:checked ~ .controls .btn-two .dot {
+    background-color: #FFCC33;
+    transform: scale(0.9);
 }
 
 #two:checked ~ .screen .pictures {
@@ -159,12 +184,22 @@ body {
     transform: translateY(-25%);
 }
 
+#three:checked ~ .controls .btn-three .dot {
+    background-color: #FFCC33;
+    transform: scale(0.9);
+}
+
 #three:checked ~ .screen .pictures {
     transform: translateY(-50%);
 }
 
 #three:checked ~ .controls .titles {
     transform: translateY(-50%);
+}
+
+#four:checked ~ .controls .btn-four .dot {
+    background-color: #FFCC33;
+    transform: scale(0.9);
 }
 
 #four:checked ~ .screen .pictures {
