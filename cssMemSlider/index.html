@@ -5,10 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/favicon.ico">
-    <title>Filmstrip</title>
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <title>Filmstrip - meme slider</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="header">
+            <span>filmstrip</span>
+        </div>
+        <div class="slider">
+            <input class="radio" id="one" name="count" type="radio" checked>
+            <input class="radio" id="two" name="count" type="radio">
+            <input class="radio" id="three" name="count" type="radio">
+            <input class="radio" id="four" name="count" type="radio">
+            <div class="screen" id="screen">
+                <div class="pictures">
+                    <div class="picture meme1"></div>
+                    <div class="picture meme2"></div>
+                    <div class="picture meme3"></div>
+                    <div class="picture meme4"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="titles">
+                    <p class="text">Охотники на привале</p>
+                    <p class="text text2">Утро в сосновом лесу</p>
+                    <p class="text">Купание красного коня</p>
+                    <p class="text">Девочка с персиками</p>
+                </div>
+                <div class="dots">
+                    <label class="dot one" for="one"></label>
+                    <label class="dot two" for="two"></label>
+                    <label class="dot three" for="three"></label>
+                    <label class="dot four" for="four"></label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
