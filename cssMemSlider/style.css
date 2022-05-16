@@ -227,10 +227,11 @@ body {
         justify-content: center;
         align-items: center;
         gap: 10%;
-        height: 30%;
+        height: 20%;
     }
 
-    .titles {
+    .block-titles {
+        height: 50%;
         margin-right: auto;
         overflow: hidden;
     }
