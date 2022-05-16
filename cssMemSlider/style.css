@@ -212,6 +212,18 @@ body {
     transform: translateY(-75%);
 }
 
+@media (max-width: 968px) {
+    .screen {
+        height: 85%;
+    }
+}
+
+@media (max-width: 868px) {
+    .screen {
+        height: 75%;
+    }
+}
+
 @media (max-width: 768px) {
     .slider {
         gap: 2%;
