@@ -16,6 +16,7 @@ html {
 body {
     margin: 0;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -31,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 5%;
     color: #000000;
     font-size: 2em;
     font-family: 'Limelight';
@@ -40,10 +42,10 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 3%;
     width: 100%;
-    height: 100%;
-    padding: 3% 17.5% 1% 17.5%;
+    height: 90%;
+    padding: 4% 17.5% 1% 17.5%;
     background-image: url('./assets/img/back2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -52,7 +54,7 @@ body {
 
 .screen {
     width: 100%;
-    height: 90%;
+    height: 85%;
     background-size: 100% 100%;
     border-radius: 20px;
     filter: sepia();
@@ -69,16 +71,20 @@ body {
 
 .picture {
     height: 25%;
+}
+
+.img {
+    width: 100%;
     border-radius: 20px;
 }
 
-.meme1 {
+/* .meme1 {
     background-image: url('./assets/img/meme1.jpg');
     background-size: 100% 100%;
     background-position: center;
-}
+} */
 
-.meme2 {
+/* .meme2 {
     background-image: url('./assets/img/meme2.jpg');
     background-size: 100% 100%;
     background-position: center;
@@ -94,7 +100,7 @@ body {
     background-image: url('./assets/img/meme4.jpg');
     background-size: 100% 100%;
     background-position: center;
-}
+} */
 
 .controls {
     display: flex;
@@ -212,7 +218,7 @@ body {
     transform: translateY(-75%);
 }
 
-@media (max-width: 968px) {
+/* @media (max-width: 968px) {
     .screen {
         height: 85%;
     }
@@ -222,16 +228,15 @@ body {
     .screen {
         height: 75%;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .slider {
-        gap: 2%;
         padding: 5% 17.5%;
     }
 
     .screen {
-        height: 70%;
+        height: 65%;
     }
 
     .controls {
